@@ -5,9 +5,18 @@ Essential Core packages for all Little Qairoe projects.
 This includes the meteor base packages and some essentail packages that would be used in all projects by Little Qairoe dev house.
 
 ## Comments:
-- Removed the packages for the using a particular design. Decided to just use a separate package if the project wants to use Bootstrap, Materialize or MDL.
+- Oct 14, 2015
+  - Added Security packages based on Discover Meteor Podcast Episode 3: Security: http://www.discovermeteor.com/blog/episode-03-security
+  - Need to add/understand matteodem:easy-security and add it to core
+- Oct 13, 2015
+  - Removed the packages for the using a particular design. Decided to just use a separate package if the project wants to use Bootstrap, Materialize or MDL.
 
 ## Logs:
+- Added in Oct 14, 2015
+  - Security
+    - "meteorhacks:sikka@1.0.1",
+    - "matteodem:easy-security@0.1.4",
+    - "ongoworks:security@1.3.0"
 - Added in Oct 13, 2015
 	- Basic
 	  - "meteor-base@1.0.1",

@@ -47,7 +47,11 @@ Package.onUse(function(api) {
     "meteorhacks:subs-manager@1.5.2",
     "meteorhacks:zones@1.6.0",
     "kadira:flow-router@2.0.2",
-    "kadira:blaze-layout@2.0.0"
+    "kadira:blaze-layout@2.0.0",
+    // Security
+    "meteorhacks:sikka@1.0.1",
+    "matteodem:easy-security@0.1.4",
+    "ongoworks:security@1.3.0"
   ]  
   // api.addFiles('littleq-core.js');
   api.use(packages);

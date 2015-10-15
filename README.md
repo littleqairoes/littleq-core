@@ -5,6 +5,11 @@ Essential Core packages for all Little Qairoe projects.
 This includes the meteor base packages and some essentail packages that would be used in all projects by Little Qairoe dev house.
 
 ## Comments:
+- Oct 15, 2015
+  - Added aldeed:autoform to make it easier to create forms.
+  - Added accounts-base and accounts-ui. Basically adding the Accounts package because I think all of Little Qairoe project would need some form of accounts management. Still thinking if accounts management should be done here or not.
+  - Added Service Config package
+  - Added Kadira profilers as well. It should always be part of all projects of Little Qairoe 
 - Oct 14, 2015
   - Added Security packages based on Discover Meteor Podcast Episode 3: Security: http://www.discovermeteor.com/blog/episode-03-security
   - Need to add/understand matteodem:easy-security and add it to core
@@ -12,6 +17,16 @@ This includes the meteor base packages and some essentail packages that would be
   - Removed the packages for the using a particular design. Decided to just use a separate package if the project wants to use Bootstrap, Materialize or MDL.
 
 ## Logs:
+- Added in Oct 15, 2015
+  - Collection helpers
+    - "aldeed:autoform@5.7.1"
+  - Accounts
+    - "accounts-base@1.2.1",
+    - "accounts-ui@1.1.6",
+  - Meteorhacks/Kadira
+    - "meteorhacks:kadira@2.23.6",
+    - "meteorhacks:kadira-profiler@1.2.1"
+    - "kadira:debug@2.2.4",    
 - Added in Oct 14, 2015
   - Security
     - "meteorhacks:sikka@1.0.1",
@@ -34,7 +49,7 @@ This includes the meteor base packages and some essentail packages that would be
 	  - "email@1.0.7",
 	  - "natestrauser:jquery-scrollto@1.4.7",
 	  - "chuangbo:cookie@1.1.0",
-  	- "less@1.0.14",
+  	- "less@2.5.0_3",
     - "underscore@1.0.3",
   - Collection helpers
     - "aldeed:simple-schema@1.3.3",

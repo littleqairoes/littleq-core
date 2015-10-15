@@ -23,18 +23,23 @@ Package.onUse(function(api) {
     "tracker@1.0.9",
     "standard-minifiers@1.0.1",
     "es5-shim@4.1.13",
-    "ecmascript@0.1.5",
+    "ecmascript@0.1.5",    
     // Extra Basic
     "reactive-var@1.0.6",
     "http@1.1.1",
     "email@1.0.7",
     "natestrauser:jquery-scrollto@1.4.7",
     "chuangbo:cookie@1.1.0",
-    "less@1.0.14",
+    "less@2.5.0_3",
     "underscore@1.0.3",
+    // Accounts
+    "accounts-base@1.2.1",
+    "accounts-ui@1.1.6",
+    "service-configuration@1.0.5",
     // Collection helpers
     "aldeed:simple-schema@1.3.3",
     "aldeed:collection2@2.3.3",
+    "aldeed:autoform@5.7.1",
     "matb33:collection-hooks@0.7.13",
     "dburles:collection-helpers@1.0.3",
     // Text formaters
@@ -46,12 +51,17 @@ Package.onUse(function(api) {
     "meteorhacks:fast-render@2.7.1",
     "meteorhacks:subs-manager@1.5.2",
     "meteorhacks:zones@1.6.0",
+    "meteorhacks:kadira@2.23.6",
+    "meteorhacks:kadira-profiler@1.2.1",
+    "kadira:debug@2.2.4",
     "kadira:flow-router@2.0.2",
     "kadira:blaze-layout@2.0.0",
+    // "kadira:blaze-plus@"
     // Security
     "meteorhacks:sikka@1.0.1",
     "matteodem:easy-security@0.1.4",
-    "ongoworks:security@1.3.0"
+    "ongoworks:security@1.3.0",
+    "east5th:package-scan@0.0.4"
   ]  
   // api.addFiles('littleq-core.js');
   api.use(packages);

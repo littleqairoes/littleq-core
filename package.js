@@ -81,7 +81,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   // api.use('ecmascript');
-  // api.use('tinytest');
-  // api.use('littleq:littleq-core');
-  // api.addFiles('littleq-core-tests.js');
+  api.use('tinytest');
+  api.use('littleq:littleq-core');
+  api.addFiles('littleq-core-tests.js');
 });

@@ -11,18 +11,6 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  configure(api)
-});
-
-Package.onTest(function(api) {
-  // api.use('ecmascript');
-  configure(api)
-  api.use('tinytest');
-
-  api.addFiles('littleq-core-tests.js');
-});
-
-function configure(api) {
   api.versionsFrom('1.2.0.2');
 
   var packages = [
@@ -43,31 +31,31 @@ function configure(api) {
     "natestrauser:jquery-scrollto@1.4.7",
     "chuangbo:cookie@1.1.0",
     "less@2.5.0_3",
-    "underscore@1.0.3",
+    "underscore@1.0.4",
     // Accounts
     "accounts-base@1.2.1",
     "accounts-ui@1.1.6",
     "service-configuration@1.0.5",
     // Collection helpers
     "aldeed:simple-schema@1.3.3",
-    "aldeed:collection2@2.3.3",
+    "aldeed:collection2@2.5.0",
     "aldeed:autoform@5.7.1",
-    "matb33:collection-hooks@0.7.13",
+    "matb33:collection-hooks@0.8.1",
     "dburles:collection-helpers@1.0.3",
     // Text formaters
-    "chuangbo:marked@0.3.2_4",
+    "chuangbo:marked@0.3.5_1",
     "ongoworks:speakingurl@5.0.1",
     "momentjs:moment@2.10.6",
-    "djedi:sanitize-html@1.7.0",
+    "djedi:sanitize-html@1.11.1",
     // Meteorhacks/Kadira
-    "meteorhacks:fast-render@2.7.1",
+    "meteorhacks:fast-render@2.10.0",
     "meteorhacks:subs-manager@1.5.2",
     "meteorhacks:zones@1.6.0",
     "meteorhacks:kadira@2.23.6",
     "meteorhacks:kadira-profiler@1.2.1",
     "kadira:debug@2.2.4",
-    "kadira:flow-router@2.0.2",
-    "kadira:blaze-layout@2.0.0",
+    "kadira:flow-router@2.7.0",
+    "kadira:blaze-layout@2.1.0",
     // "kadira:blaze-plus@"
     // Security
     "meteorhacks:sikka@1.0.1",
@@ -84,8 +72,20 @@ function configure(api) {
     "lib/deep.js"
   ], ["client", "server"])
 
+  
+
   api.export([
     "LittleQCore",
     "_"
   ])
-}
+});
+
+Package.onTest(function(api) {
+// api.use('ecmascript');
+  api.use("littleq:littleq-core")  
+  api.use('tinytest');
+  api.use("test-helpers")
+
+  api.addFiles('littleq-core-tests.js');
+});
+

@@ -11,6 +11,18 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
+  configure(api)
+});
+
+Package.onTest(function(api) {
+  // api.use('ecmascript');
+  configure(api)
+  api.use('tinytest');
+
+  api.addFiles('littleq-core-tests.js');
+});
+
+function configure(api) {
   api.versionsFrom('1.2.0.2');
 
   var packages = [
@@ -76,11 +88,4 @@ Package.onUse(function(api) {
     "LittleQCore",
     "_"
   ])
-});
-
-Package.onTest(function(api) {
-  // api.use('ecmascript');
-  api.use('tinytest');
-  api.use('littleq:littleq-core');
-  api.addFiles('littleq-core-tests.js');
-});
+}

@@ -71,12 +71,12 @@ Tinytest.add("LittleQCore.utils.trimWords should trim words from long text given
 		{
 			val: "this is camel text",
 			val2: 3,
-			exp: "this is camel…"
+			exp: "this is camel..."
 		},
 		{
 			val: "camel text",
 			val2: 1,
-			exp: "camel…"
+			exp: "camel..."
 		}
 	]	
 	for (var i in arr) {

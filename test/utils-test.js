@@ -66,23 +66,23 @@ Tinytest.add("LittleQCore.utils.camelCaseify should camel-case-ify texts", funct
 	}
 })
 
-Tinytest.add("LittleQCore.utils.trimWords should trim words from long text given number", function(test){
-	var arr = [
-		{
-			val: "this is camel text",
-			val2: 3,
-			exp: "this is camel..."
-		},
-		{
-			val: "camel text",
-			val2: 1,
-			exp: "camel..."
-		}
-	]	
-	for (var i in arr) {
-		test.equal(LittleQCore.utils.trimWords(arr[i].val, arr[i].val2), arr[i].exp, "should be equal")
-	}
-})
+// Tinytest.add("LittleQCore.utils.trimWords should trim words from long text given number", function(test){
+// 	var arr = [
+// 		{
+// 			val: "this is camel text",
+// 			val2: 3,
+// 			exp: "this is camel..."
+// 		},
+// 		{
+// 			val: "camel text",
+// 			val2: 1,
+// 			exp: "camel..."
+// 		}
+// 	]	
+// 	for (var i in arr) {
+// 		test.equal(LittleQCore.utils.trimWords(arr[i].val, arr[i].val2), arr[i].exp, "should be equal")
+// 	}
+// })
 
 Tinytest.add("LittleQCore.utils.capitalize should capitalize text", function(test){
 	var arr = [

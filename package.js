@@ -72,8 +72,6 @@ Package.onUse(function(api) {
     "lib/deep.js"
   ], ["client", "server"])
 
-  
-
   api.export([
     "LittleQCore",
     "_"
@@ -86,6 +84,11 @@ Package.onTest(function(api) {
   api.use('tinytest');
   api.use("test-helpers")
 
-  api.addFiles('littleq-core-tests.js');
+  var testBoth = [
+    "test/core-test.js",
+    "test/utils-test.js"
+  ]
+
+  api.addFiles(testBoth, ["client", "server"])
 });
 

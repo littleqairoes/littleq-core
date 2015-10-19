@@ -44,12 +44,12 @@ Package.onUse(function(api) {
     "dburles:collection-helpers@1.0.3",
     // Text formaters
     "chuangbo:marked@0.3.5_1",
-    "ongoworks:speakingurl@5.0.1",
+    "ongoworks:speakingurl@6.0.0",
     "momentjs:moment@2.10.6",
     "djedi:sanitize-html@1.11.1",
     // Meteorhacks/Kadira
     "meteorhacks:fast-render@2.10.0",
-    "meteorhacks:subs-manager@1.5.2",
+    "meteorhacks:subs-manager@1.6.2",
     "meteorhacks:zones@1.6.0",
     "meteorhacks:kadira@2.23.6",
     "meteorhacks:kadira-profiler@1.2.1",

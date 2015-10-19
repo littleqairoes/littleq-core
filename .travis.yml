@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - "0.10.36"
 before_install:
-  - "curl https://raw.githubusercontent.com/tjmonsi/stable-meteor-install/master/meteorInstall.sh | /bin/sh"
+  - "curl https://install.meteor.com | /bin/sh"
   - export PATH="$HOME/.meteor:$PATH"
   - meteor update
   - npm install -g spacejam

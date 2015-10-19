@@ -1,4 +1,4 @@
-# Little Qairoe Core Package [https://travis-ci.org/littleqairoes/littleq-core.svg?branch=master]
+# Little Qairoe Core Package ![https://travis-ci.org/littleqairoes/littleq-core.svg?branch=master](https://travis-ci.org/littleqairoes/littleq-core.svg?branch=master)
 
 Essential Core packages for all Little Qairoe projects.
 

@@ -1,6 +1,6 @@
 Package.describe({
   name: 'littleq:littleq-core',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'Library core packages for the project-potential project',
   // URL to the Git repository containing the source code for this package.
@@ -55,7 +55,7 @@ Package.onUse(function(api) {
     "meteorhacks:kadira-profiler@1.2.1",
     "kadira:debug@2.2.4",
     "kadira:flow-router@2.7.0",
-    "kadira:blaze-layout@2.1.0",
+    "kadira:blaze-layout@2.2.0",
     // "kadira:blaze-plus@"
     // Security
     "meteorhacks:sikka@1.0.1",

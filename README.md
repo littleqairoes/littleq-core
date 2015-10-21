@@ -5,6 +5,8 @@ Essential Core packages for all Little Qairoe projects.
 This includes the meteor base packages and some essentail packages that would be used in all projects by Little Qairoe dev house.
 
 ## Comments:
+- Oct 21, 2015
+  - updated blaze-layout dependency
 - Oct 15, 2015
   - Added aldeed:autoform to make it easier to create forms.
   - Added accounts-base and accounts-ui. Basically adding the Accounts package because I think all of Little Qairoe project would need some form of accounts management. Still thinking if accounts management should be done here or not.
